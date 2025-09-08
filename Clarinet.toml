@@ -1,0 +1,53 @@
+[project]
+name = 'main-contracts'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.ant-token]
+path = 'contracts/ant-token.clar'
+clarity_version = 3
+epoch = '3.2'
+
+[contracts.arcadia-core]
+path = 'contracts/arcadia-core.clar'
+clarity_version = 3
+epoch = '3.2'
+
+[contracts.asset-nft]
+path = 'contracts/asset-nft.clar'
+clarity_version = 3
+epoch = '3.2'
+
+[contracts.oracle]
+path = 'contracts/oracle.clar'
+clarity_version = 3
+epoch = '3.2'
+
+[contracts.sip-009-nft-trait]
+path = 'contracts/sip-009-nft-trait.clar'
+clarity_version = 3
+epoch = '3.2'
+
+[contracts.sip-010-ft-trait]
+path = 'contracts/sip-010-ft-trait.clar'
+clarity_version = 3
+epoch = 'latest'
+
+[contracts.yield-strategy]
+path = 'contracts/yield-strategy.clar'
+clarity_version = 3
+epoch = '3.2'
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[repl.remote_data]
+enabled = false
+api_url = 'https://api.hiro.so'

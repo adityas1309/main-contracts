@@ -1,0 +1,60 @@
+---
+id: 0
+name: Testnet deployment
+network: testnet
+stacks-node: "https://api.testnet.hiro.so"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoind.testnet.stacks.co:18332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: sip-010-ft-trait
+            expected-sender: ST336VQZA4VAGC9RQVX5F95FCCSVBV99Z3JA1MJJ9
+            cost: 9420
+            path: "contracts\\sip-010-ft-trait.clar"
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: ant-token
+            expected-sender: ST336VQZA4VAGC9RQVX5F95FCCSVBV99Z3JA1MJJ9
+            cost: 139600
+            path: "contracts\\ant-token.clar"
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: arcadia-core
+            expected-sender: ST336VQZA4VAGC9RQVX5F95FCCSVBV99Z3JA1MJJ9
+            cost: 97880
+            path: "contracts\\arcadia-core.clar"
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: sip-009-nft-trait
+            expected-sender: ST336VQZA4VAGC9RQVX5F95FCCSVBV99Z3JA1MJJ9
+            cost: 5340
+            path: "contracts\\sip-009-nft-trait.clar"
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: asset-nft
+            expected-sender: ST336VQZA4VAGC9RQVX5F95FCCSVBV99Z3JA1MJJ9
+            cost: 113590
+            path: "contracts\\asset-nft.clar"
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: oracle
+            expected-sender: ST336VQZA4VAGC9RQVX5F95FCCSVBV99Z3JA1MJJ9
+            cost: 2240
+            path: "contracts\\oracle.clar"
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: yield-strategy
+            expected-sender: ST336VQZA4VAGC9RQVX5F95FCCSVBV99Z3JA1MJJ9
+            cost: 132310
+            path: "contracts\\yield-strategy.clar"
+            anchor-block-only: true
+            clarity-version: 3
+      epoch: "3.2"

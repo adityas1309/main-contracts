@@ -2,6 +2,8 @@
 
 > **Where Digital Capital Builds the Real World**
 
+[![Demo Video](https://img.shields.io/badge/Demo-Watch%20Video-red?style=for-the-badge&logo=youtube)](https://youtu.be/6SjM-wrfU0E)
+
 A decentralized financial engine built on Stacks that transforms dormant Bitcoin holdings into productive capital for acquiring real-world assets through self-liquidating loans.
 
 ## Overview
